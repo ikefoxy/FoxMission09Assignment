@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Outfit:wght@400;600;700&display=swap');
 
+/* Project color tokens used throughout the page. */
 :root {
   --bg-deep: #061429;
   --bg-mid: #123563;
@@ -11,6 +12,7 @@
   --shine: #ffe5cc;
 }
 
+/* Base reset so sizing/padding are predictable. */
 * {
   box-sizing: border-box;
 }
@@ -30,6 +32,7 @@ body {
   font-family: Outfit, 'Trebuchet MS', Tahoma, sans-serif;
 }
 
+/* Subtle court-like grid overlay in the background. */
 body::before {
   content: '';
   position: fixed;
@@ -42,6 +45,7 @@ body::before {
   background-size: 28px 28px;
 }
 
+/* Main container that centers and frames the assignment content. */
 .page {
   max-width: 1180px;
   margin: 1.2rem auto 2.4rem;
@@ -54,6 +58,7 @@ body::before {
     inset 0 1px 0 #ffffff;
 }
 
+/* Hero/header styling for the page title block. */
 .heading {
   position: relative;
   margin-bottom: 1.2rem;
@@ -137,6 +142,7 @@ body::before {
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
+/* Team card styling with hover and entry animation. */
 .team-card {
   position: relative;
   background: var(--paper);
@@ -196,6 +202,7 @@ body::before {
   }
 }
 
+/* Mobile adjustments for spacing and single-column layout. */
 @media (max-width: 640px) {
   .page {
     margin: 0;
