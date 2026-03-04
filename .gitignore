@@ -239,6 +239,10 @@ _pkginfo.txt
 *.appxbundle
 *.appxupload
 
+# Frontend dependencies/build artifacts
+node_modules/
+dist/
+
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
